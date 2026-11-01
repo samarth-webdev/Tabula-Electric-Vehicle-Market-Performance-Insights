@@ -1,73 +1,161 @@
-<<<<<<< HEAD
-# EV Insights: Electric Vehicle Market Performance & Insights
+# ⚡ Electric Vehicle Market Performance & Insights
 
-A static React + Vite website that presents a published Tableau Public dashboard and story about the electric vehicle market. It needs no backend, database, API keys or paid services, and is deployed with GitHub Pages and GitHub Actions only.
+An interactive **Data Analytics and Visualization Project** developed using **Tableau** to analyze the global Electric Vehicle (EV) market.
 
-## Features
-- Responsive dark theme with mobile menu, active-section highlighting and keyboard-accessible navigation
-- Home, About, Dashboard, Story, Analytics features, Methodology, Technologies and Footer sections
-- Tableau dashboard embed with loading state, timeout hint and "open in new tab" button
-- Tableau story section driven by configuration (no invented URL)
-- No fabricated statistics: all numbers live inside your Tableau dashboard
+This project explores EV sales performance, geographical distribution, battery capacity, driving range, vehicle categories, and customer ratings through interactive dashboards and visualizations.
 
-## Technologies
-React 18, Vite 5, JavaScript, HTML5, CSS3, Tableau Public, GitHub, GitHub Pages.
+The project transforms raw EV market data into meaningful insights using data visualization and analytical techniques.
 
-## Project structure
+---
+
+## 🌍 Live Project
+
+🚀 **Explore the Interactive Tableau Dashboard:**
+
+[View Tableau Dashboard](https://public.tableau.com/app/profile/samarth.bhargav7236/viz/Electric_Vehicle_Market_Insights_Final/SalesGeography?publish=yes)
+
+---
+
+## 📌 Project Overview
+
+The electric vehicle industry is growing rapidly across the world. Analyzing EV market trends helps us understand sales performance, vehicle specifications, battery technologies, and geographical market distribution.
+
+This project uses Tableau to explore EV market data and present important findings through interactive visualizations.
+
+### 🎯 Project Objectives
+
+* Analyze global electric vehicle sales trends.
+* Explore EV distribution across geographical regions.
+* Compare battery capacities and driving ranges.
+* Analyze different electric vehicle categories.
+* Understand customer ratings and vehicle performance.
+* Create interactive dashboards for data exploration.
+* Present analytical findings through visual storytelling.
+
+---
+
+## 📊 Key Analysis Areas
+
+The project includes **9 visualizations organized into 3 analytical scenarios.**
+
+### 1. Sales and Market Performance
+
+* Analyze annual electric vehicle sales.
+* Understand EV market growth patterns.
+* Compare sales performance across different categories.
+* Identify important market trends.
+
+### 2. Geographical Analysis
+
+* Visualize EV distribution across different regions.
+* Explore geographical patterns in EV adoption.
+* Compare regional market performance.
+* Understand the global distribution of electric vehicles.
+
+### 3. Vehicle Specifications and Performance
+
+* Compare battery capacities across EV models.
+* Analyze the relationship between battery capacity and driving range.
+* Explore different vehicle categories.
+* Examine customer ratings and vehicle characteristics.
+
+---
+
+## 🛠️ Technologies Used
+
+| Technology      | Purpose                                       |
+| --------------- | --------------------------------------------- |
+| Tableau Desktop | Dashboard creation and data visualization     |
+| Tableau Public  | Publishing and sharing interactive dashboards |
+| CSV             | Dataset storage and data input                |
+| Data Analytics  | Exploring trends and identifying insights     |
+
+---
+
+## 📁 Project Structure
+
+```text
+Tabula-Electric-Vehicle-Market-Performance-Insights/
+│
+├── Dataset/
+│   └── ev_market_test.csv
+│
+├── Tableau/
+│   └── Electric_Vehicle_Market_Insights.twbx
+│
+└── README.md
 ```
-ev-insights/
-├── .github/workflows/deploy.yml   GitHub Pages deployment
-├── public/favicon.svg
-├── src/
-│   ├── components/                Navbar, Hero, About, Dashboard, Story,
-│   │                              AnalyticsFeatures, Methodology, TechStack,
-│   │                              Footer, TableauEmbed
-│   ├── config/tableau.js          Dashboard, Story and repository URLs
-│   ├── App.jsx  main.jsx  styles.css
-├── index.html  package.json  vite.config.js  .gitignore
-```
 
-## Run locally (Windows, macOS, Linux)
-1. Install Node.js LTS from https://nodejs.org
-2. In the project folder run:
-```
-npm install
-npm run dev
-```
-3. Open the local URL printed in the terminal (usually http://localhost:5173).
+### Project Files Description
 
-Production build: `npm run build` (output in `dist/`), preview it with `npm run preview`.
+* **`.twbx`** – Packaged Tableau workbook containing dashboards, visualizations, and supporting resources.
+* **`.csv`** – Dataset containing electric vehicle market information.
+* **`README.md`** – Documentation explaining the project, objectives, and analysis.
 
-## Configure Tableau and your repository
-Edit `src/config/tableau.js`:
-- `DASHBOARD.publicUrl` / `DASHBOARD.embedUrl`: already set to your published dashboard. If the embed does not load, open the dashboard on Tableau Public, choose **Share**, and copy the link or embed URL into `embedUrl`.
-- `STORY.publicUrl` / `STORY.embedUrl`: empty on purpose. Paste your published Story URLs; the embed and button then appear automatically.
-- `REPO_URL`: set to `https://github.com/<user>/<repo>` to show the footer GitHub link.
+---
 
-## Deploy to GitHub Pages
-1. Push this project to the `main` branch of your repository (see below).
-2. In the repository open **Settings > Pages**, and under **Build and deployment** set **Source** to **GitHub Actions**.
-3. The workflow in `.github/workflows/deploy.yml` runs on every push to `main`: it installs dependencies, builds, and deploys. Watch progress in the **Actions** tab.
-4. Your site will be at `https://<your-username>.github.io/<repository-name>/`.
+## 🚀 How to Explore the Project
 
-Vite uses `base: './'`, so asset paths are relative and work under any repository name.
+### Option 1: Online
 
-### Upload to GitHub
-```
-git init
-git add .
-git commit -m "Add EV Insights website"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<repository-name>.git
-git push -u origin main
-```
-If the repository already has files, copy this project in without overwriting unrelated files, or run `git pull origin main --allow-unrelated-histories` first.
+1. Open the published Tableau dashboard.
+2. Explore the available visualizations.
+3. Navigate through different analytical scenarios.
+4. Use interactive filters to explore the data.
+5. Understand the insights presented through charts and dashboards.
 
-## Known limitations
-- Tableau Public decides whether a view can be embedded. Browsers cannot report cross-origin iframe errors, so the site shows a hint after 12 seconds if loading seems slow rather than detecting failure exactly.
-- Story embedding needs you to supply the published Story URL.
-- The embedded Tableau content is not tested by the build; check it in a browser after deploying.
-- The site contains no dataset of its own, so it shows no charts beyond Tableau's.
-=======
-# EV_Insights
->>>>>>> d92e65b73cbe0d1246c8c9771ad0325ee06c8f10
+### Option 2: Run Locally
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/samarth-webdev/Tabula-Electric-Vehicle-Market-Performance-Insights.git
+   ```
+
+2. Open the downloaded project folder.
+
+3. Locate the Tableau packaged workbook (`.twbx`).
+
+4. Open the workbook using Tableau Desktop.
+
+5. Explore the dashboards and visualizations.
+
+---
+
+## 🎓 Learning Outcomes
+
+Through this project, I gained practical experience in:
+
+* Understanding data analytics and visualization.
+* Creating interactive dashboards using Tableau.
+* Exploring and analyzing real-world datasets.
+* Understanding EV market trends and sales performance.
+* Analyzing geographical and vehicle-related data.
+* Presenting analytical findings through visual storytelling.
+* Publishing dashboards using Tableau Public.
+
+---
+
+## 👨‍💻 Author
+
+**Samarth Bhargav**
+
+🎓 B.Tech – Computer Science and Engineering
+
+📚 2nd Year Student
+
+🔗 **GitHub:** [samarth-webdev](https://github.com/samarth-webdev)
+
+📊 **Tableau Public:** [Explore My Dashboard](https://public.tableau.com/app/profile/samarth.bhargav7236/viz/Electric_Vehicle_Market_Insights_Final/SalesGeography?publish=yes)
+
+---
+
+## ⭐ Support
+
+If you find this project interesting, consider giving this repository a ⭐ on GitHub!
+
+Your support and feedback are appreciated.
+
+---
+
+*Developed for learning, data analytics practice, and portfolio development.*

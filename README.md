@@ -78,5 +78,84 @@ The project includes **9 visualizations organized into 3 analytical scenarios.**
 Tabula-Electric-Vehicle-Market-Performance-Insights/
 │
 ├── Dataset/
-│   └── ev
+│   └── ev_market_test.csv
+│
+├── Tableau/
+│   └── Electric_Vehicle_Market_Insights.twbx
+│
+└── README.md
 ```
+
+### Project Files Description
+
+* **`.twbx`** – Packaged Tableau workbook containing dashboards, visualizations, and supporting resources.
+* **`.csv`** – Dataset containing electric vehicle market information.
+* **`README.md`** – Documentation explaining the project, objectives, and analysis.
+
+---
+
+## 🚀 How to Explore the Project
+
+### Option 1: Online
+
+1. Open the published Tableau dashboard.
+2. Explore the available visualizations.
+3. Navigate through different analytical scenarios.
+4. Use interactive filters to explore the data.
+5. Understand the insights presented through charts and dashboards.
+
+### Option 2: Run Locally
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/samarth-webdev/Tabula-Electric-Vehicle-Market-Performance-Insights.git
+   ```
+
+2. Open the downloaded project folder.
+
+3. Locate the Tableau packaged workbook (`.twbx`).
+
+4. Open the workbook using Tableau Desktop.
+
+5. Explore the dashboards and visualizations.
+
+---
+
+## 🎓 Learning Outcomes
+
+Through this project, I gained practical experience in:
+
+* Understanding data analytics and visualization.
+* Creating interactive dashboards using Tableau.
+* Exploring and analyzing real-world datasets.
+* Understanding EV market trends and sales performance.
+* Analyzing geographical and vehicle-related data.
+* Presenting analytical findings through visual storytelling.
+* Publishing dashboards using Tableau Public.
+
+---
+
+## 👨‍💻 Author
+
+**Samarth Bhargav**
+
+🎓 B.Tech – Computer Science and Engineering
+
+📚 2nd Year Student
+
+🔗 **GitHub:** [samarth-webdev](https://github.com/samarth-webdev)
+
+📊 **Tableau Public:** [Explore My Dashboard](https://public.tableau.com/app/profile/samarth.bhargav7236/viz/Electric_Vehicle_Market_Insights_Final/SalesGeography?publish=yes)
+
+---
+
+## ⭐ Support
+
+If you find this project interesting, consider giving this repository a ⭐ on GitHub!
+
+Your support and feedback are appreciated.
+
+---
+
+*Developed for learning, data analytics practice, and portfolio development.*
